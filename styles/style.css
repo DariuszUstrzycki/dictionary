@@ -69,6 +69,16 @@ article p {
     font-size: 1.75rem;
 }
 
+
+.menu-box {
+    width: 500px;
+    margin: 0 auto;
+    background-color: yellow;
+}
+
+
+
+
 section .row img {
     margin: 0 0 30px;
     width: 100%;
