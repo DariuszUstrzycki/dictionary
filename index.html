@@ -32,31 +32,29 @@
         <div class="container">
             <div class="row text-center">
                 <h2>Learn languages faster!</h2>
-                <h3>Build your own vocabulary bank and test yourself</h3>
+                <h3>Build your own vocabulary bank</h3>
             </div>
         </div>
     </section>
 
     <!--supporting content area-->
 
-    <article class="container-fluid">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis pulvinar ex ac fermentum. Nulla ante ex, tempor ac sapien non, iaculis lacinia purus. Nulla facilisi. In maximus malesuada massa, et auctor elit dictum quis. Quisque in lacinia eros, id interdum ex. Praesent efficitur erat a quam semper, et faucibus odio aliquet. Fusce tincidunt varius convallis. Sed efficitur, tellus e.g.et semper congue, ipsum lorem accumsan quam, e.g.et bibendum dolor ligula at leo. Cras sem neque, mollis id justo nec, feugiat vehicula mauris. Phasellus e.g.estas consectetur lorem, quis varius dui convallis non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi at leo et elit dapibus mollis e.g.et eu nunc. Proin auctor erat sed arcu porttitor convallis. Cras at augue elit. In vestibulum non dolor e.g.et euismod. Suspendisse eleifend pretium sollicitudin.</p>
-    </article>
 
 
-    <div class="row">
+
+    <div class="row" id="menu-row">
 
         <div class="col-sm-6 col-sm-offset-3">
             <div class="menu-box">
-                <article class="container-fluid">
+                <section class="container-fluid" id="menu-header">
                     <h3>Add to your dictionary</h3>
-                    <p>Enter the data for your new word. You don't have to complete all the fields. Only the first field is required. When in doubt, click the little question mark next to each input item. You will also find there the allowed length of your input. When you are finished, click the submit button. The data will be added to your dictionary.</p>
-                </article>
-                <form>
+                    <p>Enter the data for your new word. You don't have to complete all the fields. Only the first field is required. When in doubt, click the little question mark next to each input item. It will also show the allowed length of your input. When you are finished, click the submit button. The data will be added to your dictionary.</p>
+                </section>
 
+                <form>
                     <div class="form-group">
                         <label class="control-label">New word/phrase:</label>
-                        <input class="form-control" placeholder="e.g play">
+                        <input class="form-control" placeholder="e.g. play">
                     </div>
 
                     <!-- Checkbox Group !-->
@@ -114,7 +112,7 @@
 
                     <!-- Text Box 2 !-->
                     <div class="form-group">
-                        <label for="second-lg-translation-id" class="control-label">Translation in another foreign language you're learning (French, German, etc.):</label>
+                        <label for="second-lg-translation-id" class="control-label">Translation in another foreign language you're learning (French, Spanish, etc.):</label>
                         <input type="text" class="form-control" id="second-lg-translation-id" name="second-lg-translation" placeholder="e.g. jouer (French)">
                     </div>
 
@@ -122,17 +120,17 @@
                     <!-- 3 Text areas -->
 
                     <div class="form-group">
-                        <label class="control-label " for="definition-1-id">A definition (-s) of your word/phrase:</label>
+                        <label class="control-label " for="definition-1-id">A definition/-s of your word/phrase:</label>
                         <textarea class="form-control" id="definition-1-id" name="definition-1" rows="5" placeholder="e.g. engage in (a game or activity) for enjoyment."></textarea>
                     </div>
 
                     <div class=" form-group ">
-                        <label class="control-label " for="definition-2-id ">A definition (-s) of your word/phrase:</label>
+                        <label class="control-label " for="definition-2-id ">A definition/-s of your word/phrase:</label>
                         <textarea class="form-control " id="definition-2-id " name="definition-2 " rows="5 " placeholder="e.g. perform on a musical instrument"></textarea>
                     </div>
 
                     <div class="form-group ">
-                        <label class="control-label " for="definition-3-id ">A definition (-s) of your word/phrase:</label>
+                        <label class="control-label " for="definition-3-id ">A definition/-s of your word/phrase:</label>
                         <textarea class="form-control " id="definition-3-id " name="definition-3 " rows="5 " placeholder="e.g. perform in a film or theatrical production."></textarea>
                     </div>
 
@@ -170,7 +168,7 @@
 
                     <!-- Submit button !-->
 
-                    <button type="submit " class="btn btn-primary ">Submit</button>
+                    <button type="submit" class="btn btn-primary">Add to my dictionary</button>
 
                 </form>
             </div>

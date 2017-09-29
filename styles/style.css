@@ -15,12 +15,14 @@ body {
 
 header {
     padding: 20px 0;
+
 }
 
 header .row,
 footer .row {
     display: flex;
     align-items: center;
+
 }
 
 header h1 {
@@ -31,22 +33,33 @@ header h1 {
 header nav {
     display: flex;
     justify-content: flex-end;
+
 }
 
 header p {
     padding: 0 20px;
     margin: 0;
+
+}
+
+
+section {
+    margin-left: 10px;
+    margin-right: 40px;
+
+    width: 100%;
+    align-items: center;
 }
 
 .jumbotron {
     display: flex;
     align-items: center;
-
     background-image: url('/images/dictionary2.jpg');
     background-size: cover;
     color: #ffffff;
     height: 200px;
     text-shadow: 0.25px 0.25px 0.25px #000000;
+
 }
 
 .jumbotron h2 {
@@ -54,6 +67,7 @@ header p {
     font-weight: 700;
     margin: 0;
     color: #fff;
+
 }
 
 .jumbotron h3 {
@@ -62,59 +76,42 @@ header p {
 }
 
 
-
-article p {
-
-    padding: 5px 70px 0px 70px;
-    font-size: 1.75rem;
-}
-
-
 .menu-box {
     width: 500px;
     margin: 0 auto;
-    background-color: yellow;
+    background-color: rgb(240, 240, 240);
 }
 
 
+form,
+#menu-header {
+    padding: 20px;
 
+}
 
-section .row img {
-    margin: 0 0 30px;
-    width: 100%;
-    align-items: center;
+.menu-box h3 {
+    margin-top: 0px;
+    padding-top: 10px;
+}
+
+#menu-header {
+    padding-top: 0px;
+}
+
+.form-group {
+    background-color: rgb(240, 240, 240);
+    padding-top: 10px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.btn.btn-primary {
+
+    display: block;
+    margin: auto;
 }
 
 
-.project-box h4 {
-    padding-top: 30px;
-    color: red;
-}
-
-.col-sm-6 {
-    margin: 0 0 30px;
-}
-
-
-
-footer {
-    font-size: 12px;
-    padding: 20px 0;
-}
-
-footer .col-sm-8 {
-    display: flex;
-    justify-content: flex-end;
-}
-
-footer ul {
-    list-style: none;
-}
-
-footer li img {
-    width: 32px;
-    height: 32px;
-}
 
 
 /*
