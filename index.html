@@ -6,7 +6,7 @@
     <title>Private Online Dictionary</title>
     <meta name="description" content="Webpage for storing users' words">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" inte.g.rity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLe.g.xhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito|Overpass" rel="stylesheet">
 </head>
 
@@ -40,7 +40,7 @@
     <!--supporting content area-->
 
     <article class="container-fluid">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis pulvinar ex ac fermentum. Nulla ante ex, tempor ac sapien non, iaculis lacinia purus. Nulla facilisi. In maximus malesuada massa, et auctor elit dictum quis. Quisque in lacinia eros, id interdum ex. Praesent efficitur erat a quam semper, et faucibus odio aliquet. Fusce tincidunt varius convallis. Sed efficitur, tellus eget semper congue, ipsum lorem accumsan quam, eget bibendum dolor ligula at leo. Cras sem neque, mollis id justo nec, feugiat vehicula mauris. Phasellus egestas consectetur lorem, quis varius dui convallis non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi at leo et elit dapibus mollis eget eu nunc. Proin auctor erat sed arcu porttitor convallis. Cras at augue elit. In vestibulum non dolor eget euismod. Suspendisse eleifend pretium sollicitudin.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis pulvinar ex ac fermentum. Nulla ante ex, tempor ac sapien non, iaculis lacinia purus. Nulla facilisi. In maximus malesuada massa, et auctor elit dictum quis. Quisque in lacinia eros, id interdum ex. Praesent efficitur erat a quam semper, et faucibus odio aliquet. Fusce tincidunt varius convallis. Sed efficitur, tellus e.g.et semper congue, ipsum lorem accumsan quam, e.g.et bibendum dolor ligula at leo. Cras sem neque, mollis id justo nec, feugiat vehicula mauris. Phasellus e.g.estas consectetur lorem, quis varius dui convallis non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi at leo et elit dapibus mollis e.g.et eu nunc. Proin auctor erat sed arcu porttitor convallis. Cras at augue elit. In vestibulum non dolor e.g.et euismod. Suspendisse eleifend pretium sollicitudin.</p>
     </article>
 
 
@@ -56,62 +56,122 @@
 
                     <div class="form-group">
                         <label class="control-label">New word/phrase:</label>
-                        <input class="form-control" placeholder="new word/phrase (the only required field)">
+                        <input class="form-control" placeholder="e.g play">
                     </div>
+
+                    <!-- Checkbox Group !-->
+                    <div id="grammar-checkbox">
+                        <div class="form-group">
+                            <label class="control-label">The grammar information you want to store for this word</label>
+
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="gr_info" value="noun">noun (e.g. a book, a dog)</label>
+                            </div>
+
+
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="gr_info" value="verb">verb (e.g. go, drink)</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="gr_info" value="adjective">adjective (e.g. slow, good)</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="gr_info" value="adverb">adverb (e.g. slowly, well)</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="gr_info" value="preposition">preposition (e.g. in, on)</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="gr_info" value="pronoun">pronoun (e.g. my, he)</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="gr_info" value="conjuction">conjuction (e.g. because, and)</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="gr_info" value="interjection">interjection (e.g. Wow!)</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="gr_info" value="phrasal verb">phrasal verb (e.g. get off))</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="gr_info" value="idiom">idiom</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="gr_info" value="phrase">phrase</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="gr_info" value="proverb">proverb</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Text Box 1 !-->
+                    <div class="form-group">
+                        <label for="mt-translation-id" class="control-label">Your mother tongue translation:</label>
+                        <input type="text" class="form-control" id="mt-translation-id" name="mt-translation" placeholder="e.g spielen">
+                    </div>
+
+                    <!-- Text Box 2 !-->
+                    <div class="form-group">
+                        <label for="second-lg-translation-id" class="control-label">Translation in another foreign language you're learning (French, German, etc.):</label>
+                        <input type="text" class="form-control" id="second-lg-translation-id" name="second-lg-translation" placeholder="e.g. jouer (French)">
+                    </div>
+
+
+                    <!-- 3 Text areas -->
 
                     <div class="form-group">
-                        <!-- Email field !-->
-                        <label for="mt_translation_id" class="control-label">your mother tongue translation</label>
-                        <input type="text" class="form-control" id="mt_translation_id" name="mt_translation" placeholder="your mother tongue translation">
+                        <label class="control-label " for="definition-1-id">A definition (-s) of your word/phrase:</label>
+                        <textarea class="form-control" id="definition-1-id" name="definition-1" rows="5" placeholder="e.g. engage in (a game or activity) for enjoyment."></textarea>
                     </div>
+
+                    <div class=" form-group ">
+                        <label class="control-label " for="definition-2-id ">A definition (-s) of your word/phrase:</label>
+                        <textarea class="form-control " id="definition-2-id " name="definition-2 " rows="5 " placeholder="e.g. perform on a musical instrument"></textarea>
+                    </div>
+
+                    <div class="form-group ">
+                        <label class="control-label " for="definition-3-id ">A definition (-s) of your word/phrase:</label>
+                        <textarea class="form-control " id="definition-3-id " name="definition-3 " rows="5 " placeholder="e.g. perform in a film or theatrical production."></textarea>
+                    </div>
+
+
+                    <!-- 2 Text Boxes !-->
+
+                    <div class="form-group ">
+                        <label for="synonyms-id " class="control-label ">A synonym/-s of your word/phrase:</label>
+                        <input type="text " class="form-control " id="synonyms-id " name="synonyms" placeholder="e.g act, compete">
+                    </div>
+
+                    <div class="form-group ">
+                        <label for="antonyms-id " class="control-label ">An antonym/-s of your word/phrase:</label>
+                        <input type="text " class="form-control " id="antonyms-id " name="antonyms" placeholder="e.g  drudge, labour">
+                    </div>
+
+                    <!-- 2 Text areas -->
 
                     <div class="form-group">
-                        <!-- Checkbox Group !-->
-                        <label class="control-label">The grammar information you want to store for this word</label>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="gr_info" value="noun">noun (e.g. a book, a dog)</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="gr_info" value="verb">verb (e.g. go, drink)</label>
-                        </div>
-
-
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="gr_info" value="adjective">adjective (eg slow, good)</label>
-                        </div>
-
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="gr_info" value="adverb">adverb (eg slowly, well)</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="gr_info" value="preposition">preposition (eg in, on)</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="gr_info" value="pronoun">pronoun (eg my, he)</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="gr_info" value="conjuction">conjuction (eg because, and)</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="gr_info" value="interjection">interjection (eg Wow!)</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="gr_info" value="phrasal verb">phrasal verb (eg get off))</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="gr_info" value="idiom">idiom</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="gr_info" value="phrase">phrase</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="gr_info" value="proverb">proverb</label>
-                        </div>
+                        <label class="control-label " for="definition-1-id">Example sentences:</label>
+                        <textarea class="form-control" id="definition-1-id" name="definition-1" rows="5" placeholder="e.g. The children were playing by a pool. # So, in an eventful year, he played nine tournaments, won six of them and came runner-up in two. # Tom Hanks plays six characters in this new animated movie by Robert Zemeckis."></textarea>
                     </div>
-                    <div class="form-group">
-                        <!-- Submit button !-->
-                        <button type="submit" class="btn btn-primary">Submit</button>
+
+                    <div class=" form-group ">
+                        <label class="control-label " for="definition-2-id ">Any other information you want to add:</label>
+                        <textarea class="form-control " id="definition-2-id " name="definition-2 " rows="5 " placeholder="e.g. /pleɪ/ I want to try to use this word more often."></textarea>
                     </div>
+
+
+
+
+
+
+
+
+                    <!-- Submit button !-->
+
+                    <button type="submit " class="btn btn-primary ">Submit</button>
+
                 </form>
             </div>
         </div>
