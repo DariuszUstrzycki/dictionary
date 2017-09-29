@@ -55,8 +55,62 @@
                 <form>
 
                     <div class="form-group">
-                        <label class="control-label ">Enter your name:</label>
-                        <input class="form-control ">
+                        <label class="control-label">New word/phrase:</label>
+                        <input class="form-control" placeholder="new word/phrase (the only required field)">
+                    </div>
+
+                    <div class="form-group">
+                        <!-- Email field !-->
+                        <label for="mt_translation_id" class="control-label">your mother tongue translation</label>
+                        <input type="text" class="form-control" id="mt_translation_id" name="mt_translation" placeholder="your mother tongue translation">
+                    </div>
+
+                    <div class="form-group">
+                        <!-- Checkbox Group !-->
+                        <label class="control-label">The grammar information you want to store for this word</label>
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="gr_info" value="noun">noun (e.g. a book, a dog)</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="gr_info" value="verb">verb (e.g. go, drink)</label>
+                        </div>
+
+
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="gr_info" value="adjective">adjective (eg slow, good)</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="gr_info" value="adverb">adverb (eg slowly, well)</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="gr_info" value="preposition">preposition (eg in, on)</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="gr_info" value="pronoun">pronoun (eg my, he)</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="gr_info" value="conjuction">conjuction (eg because, and)</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="gr_info" value="interjection">interjection (eg Wow!)</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="gr_info" value="phrasal verb">phrasal verb (eg get off))</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="gr_info" value="idiom">idiom</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="gr_info" value="phrase">phrase</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="gr_info" value="proverb">proverb</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!-- Submit button !-->
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
             </div>
@@ -64,22 +118,6 @@
     </div>
 
 
-
-
-
-    <!--
-    <section class="container ">
-        <div class="row ">
-            <div class="project-box ">
-                <figure class="col-sm-12 ">
-                    <h4>Naughts and Crosses 1</h4>
-                    <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/kitchen.jpg " />
-                    <p>Lorema ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis pulvinar ex ac fermentum. Nulla ante ex, tempor ac sapien non, iaculis lacinia purus. Nulla facilisi. In maximus malesuada massa, et auctor elit dictum qu</p>
-                </figure>
-            </div>
-        </div>
-    </section>
-    -->
 
 
 
