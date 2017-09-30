@@ -48,8 +48,8 @@ section {
     margin-right: 0px;
     width: 96%;
     align-items: center;
-
-
+    position: relative;
+    z-index: -1;
 }
 
 .jumbotron {
@@ -58,9 +58,15 @@ section {
     background-image: url('/images/dictionary2.jpg');
     background-size: cover;
     color: #ffffff;
-    height: 200px;
+    height: 400px;
     text-shadow: 0.25px 0.25px 0.25px #000000;
+    position: relative;
+    z-index: -1;
+}
 
+img {
+    position: relative;
+    z-index: 0;
 }
 
 .jumbotron h2 {
@@ -73,14 +79,23 @@ section {
 
 .jumbotron h3 {
     margin: 0 0 20px;
+    /*top   right/left  bottom*/
     color: black;
 }
 
+.menu-row {
+    position: relative;
+    z-index: 2;
+}
 
-.menu-box {
+
+#menu-box {
     width: 500px;
     margin: 0 auto;
+    /*top-bottom  right-left*/
     background-color: rgb(240, 240, 240);
+    position: relative;
+    z-index: 2;
 }
 
 
