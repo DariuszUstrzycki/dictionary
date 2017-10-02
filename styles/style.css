@@ -10,20 +10,14 @@
 body {
     font-size: 100%;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
 }
 
-header {
-    margin: 0 10px;
-    padding: 20px 10px;
-
-}
-
-header .row,
-footer .row {
+header .row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0 0px;
+    padding: 10px 0px;
 }
 
 header h1 {
@@ -35,64 +29,38 @@ header h1 {
 header nav {
     display: flex;
     justify-content: flex-end;
-
-}
-
-header p {
-    padding: 0 10px;
-    margin: 0;
-
-}
-
-nav {
     padding-top: 10px;
 }
 
-
-section {
-    margin-left: 10px;
-    margin-right: 0px;
-
-    align-items: center;
-    position: relative;
-
+header nav p {
+    padding-left: 0;
+    padding-right: 10px;
+    font-size: 1.3em;
 }
+
 
 .jumbotron {
     margin: 0 10px;
-    display: flex;
-    align-items: center;
     background: url('../images/dictionary1_verysmall.jpg') no-repeat center center;
     background-size: cover;
-    max-height: 300px;
-    color: #ffffff;
-
-
-
-}
-
-img {
-    max-width: 1000 px;
     max-height: 300px;
 }
 
 
 
 .jumbotron h2 {
-    font-size: calc(50px + .5vw);
-
-    font-weight: 700;
-    margin: 0;
     color: #fff;
+    font-size: calc(50px + .5vw);
+    font-weight: 700;
     text-shadow: 2px 2px 8px #FF0000;
-
 }
 
 .jumbotron h3 {
     margin: 20 0 20px;
-    /*top   right/left  bottom*/
     color: black;
-    font-weight: 300;
+    font-size: calc(27px + .4vw);
+    font-weight: 500;
+    text-shadow: -1px 0 black, 0 1px white, 1px 0 white, 0 1px white;
 }
 
 #menu-row {
