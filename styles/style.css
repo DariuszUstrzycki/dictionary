@@ -1,11 +1,12 @@
-/*html, body {
-  color: white;
-  background-color: grey;
-  font-family: sans-serif;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  */
+html,
+body {
+    color: white;
+    background-color: white;
+    font-family: sans-serif;
+    padding-right: 8px;
+    width: 100%;
+    height: 100%;
+}
 
 body {
     font-size: 100%;
@@ -17,12 +18,15 @@ header .row {
     align-items: center;
     flex-wrap: wrap;
     margin: 0 0px;
-    padding: 10px 0px;
+    padding: 15px 10px 0px;
+
+    max-width: 99%;
 }
 
 header h1 {
     font-weight: 700;
     margin: 0;
+
     flex-wrap: wrap;
 }
 
@@ -30,12 +34,14 @@ header nav {
     display: flex;
     justify-content: flex-end;
     padding-top: 10px;
+
 }
 
 header nav ul {
     padding: 0;
 
 }
+
 header nav li {
     display: inline;
     padding-left: 0;
@@ -45,7 +51,8 @@ header nav li {
 
 
 .jumbotron {
-    margin: 0 10px;
+    margin-right: -4px;
+    margin-left: 10px;
     background: url('../images/dictionary1_verysmall.jpg') no-repeat center center;
     background-size: cover;
     max-height: 300px;
