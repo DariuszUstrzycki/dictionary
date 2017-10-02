@@ -32,7 +32,12 @@ header nav {
     padding-top: 10px;
 }
 
-header nav p {
+header nav ul {
+    padding: 0;
+
+}
+header nav li {
+    display: inline;
     padding-left: 0;
     padding-right: 10px;
     font-size: 1.3em;
