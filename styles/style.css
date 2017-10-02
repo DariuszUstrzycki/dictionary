@@ -14,7 +14,8 @@ body {
 }
 
 header {
-    padding: 20px 0;
+    margin: 0 10px;
+    padding: 20px 10px;
 
 }
 
@@ -22,12 +23,13 @@ header .row,
 footer .row {
     display: flex;
     align-items: center;
-
+    flex-wrap: wrap;
 }
 
 header h1 {
     font-weight: 700;
     margin: 0;
+    flex-wrap: wrap;
 }
 
 header nav {
@@ -37,36 +39,48 @@ header nav {
 }
 
 header p {
-    padding: 0 20px;
+    padding: 0 10px;
     margin: 0;
 
+}
+
+nav {
+    padding-top: 10px;
 }
 
 
 section {
     margin-left: 10px;
     margin-right: 0px;
-    width: 96%;
+
     align-items: center;
     position: relative;
 
 }
 
 .jumbotron {
+    margin: 0 10px;
     display: flex;
     align-items: center;
-    background-image: url('/images/dictionary2.jpg');
+    background: url('../images/dictionary1_verysmall.jpg') no-repeat center center;
     background-size: cover;
+    max-height: 300px;
     color: #ffffff;
-    height: 300px;
 
 
+
+}
+
+img {
+    max-width: 1000 px;
+    max-height: 300px;
 }
 
 
 
 .jumbotron h2 {
-    font-size: 60px;
+    font-size: calc(50px + .5vw);
+
     font-weight: 700;
     margin: 0;
     color: #fff;
@@ -75,10 +89,16 @@ section {
 }
 
 .jumbotron h3 {
-    margin: 0 0 20px;
+    margin: 20 0 20px;
     /*top   right/left  bottom*/
     color: black;
     font-weight: 300;
+}
+
+#menu-row {
+
+    margin: 0 0px;
+
 }
 
 #menu-header {
@@ -87,8 +107,9 @@ section {
 
 
 #menu-box {
-    width: 500px;
+    max-width: 500px;
     margin: 0 auto;
+
     /*top-bottom  right-left*/
     background-color: rgb(240, 240, 240);
 
