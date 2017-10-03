@@ -1,0 +1,76 @@
+.navbar {
+    background: white;
+}
+
+.jumbotron {
+
+    background: url('../images/dictionary1_verysmall.jpg') no-repeat center center;
+    background-size: cover;
+    /*    max-height: 300px;*/
+    text-shadow: 2px 2px 8px #FF0000;
+}
+
+.jumbotron h2 {
+    color: white;
+    font-size: calc(50px + .5vw);
+    font-weight: 700;
+    text-shadow: 2px 2px 8px #FF0000;
+}
+
+.jumbotron h3 {
+    color: black;
+    font-size: calc(25px + .4vw);
+    font-weight: 500;
+    text-shadow: 2px 2px 8px white;
+}
+
+
+
+/*
+
+h1 {
+  font-size: 48px;
+}
+
+p {
+  max-width: 65%;
+  min-width: 500px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.6rem;
+}
+
+div {
+  padding-right: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+video {
+  background-color: #000000;
+  border: 2px solid black;
+}
+
+.container {
+  display: flex;
+}
+
+.main {
+  padding-left: 30px;
+  min-width: 75%;
+}
+
+.nav {
+  background-color: #FFEE00;
+  max-width: 25%;
+  min-width: 140px;
+  flex: 1;
+}
+
+.nav h1 {
+  padding-left: 20px;
+}
+
+*/

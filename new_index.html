@@ -10,63 +10,141 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+    <link href="styles/style_2.css" rel="stylesheet" type="text/css">
 
 
 </head>
 
 <body>
-    <div class="container">
 
-        <!--        HEADER-->
-        <div class="header clearfix">
-            <nav>
-                <ul class="nav nav-pills pull-right">
-                    <li role="presentation" class="active"><a href="#">Home</a></li>
-                    <li role="presentation"><a href="#">About</a></li>
-                    <li role="presentation"><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <h3 class="text-muted">Project name</h3>
-        </div>
-
-        <!--        JUMBOTRON -->
-        <!--        Place the jumbotron inside the <div class="container"> if you want the jumbotron to NOT extend to the edge of the screen-->
-        <div class="jumbotron">
-            <h1>Jumbotron heading</h1>
-            <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
-        </div>
-
-        <!--        MAIN AREA ROW -->
-        <!--        Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding-->
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>Subheading</h4>
-                    <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-                    <h4>Subheading</h4>
-                    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-                    <h4>Subheading</h4>
-                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-                </div>
-
-                <div class="col-lg-6">
-                    <h4>Subheading</h4>
-                    <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-                    <h4>Subheading</h4>
-                    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-                    <h4>Subheading</h4>
-                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-                </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" href="#">Project name</a>
             </div>
-            <!-- /row -->
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">File<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Import JSON file</a></li>
+                            <li><a href="#">Import XML file</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Edit<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Add items</a></li>
+                            <li><a href="#">Edit items action</a></li>
+                            <li><a href="#">Delete items</a></li>
+                            <li><a href="#">Find items</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Test<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Prepare a new test</a></li>
+                            <li><a href="#">Take a saved test</a></li>
+                            <li><a href="#">Take a random test</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">View<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">How to use it</a></li>
+                            <li><a href="#">Get involved</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Links not active yet</li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Your account<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Your profile</a></li>
+                            <li><a href="#">Log out</a></li>
+                            <li><a href="#">Sign out</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Links not active yet</li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Sign In</a>
+                    </li>
+                    <li class="active"><a href="./">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
         </div>
-        <!-- /container -->
+    </nav>
+
+
+    <!--        JUMBOTRON -->
+    <!--        Place the jumbotron inside the <div class="container"> if you want the jumbotron to NOT extend to the edge of the screen-->
+    <div class="jumbotron text-center">
+        <div class="container">
+            <h2>Learn languages faster!</h2>
+            <h3>Build your own vocabulary bank</h3>
+
+        </div>
+    </div>
+
+    <!--        MAIN AREA ROW -->
+    <!--        Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding-->
+    <div class="container">
+        <div class="row marketing">
+            <div class="col-lg-6">
+                <h4>Subheading</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+                <h4>Subheading</h4>
+                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+                <h4>Subheading</h4>
+                <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            </div>
+
+            <div class="col-lg-6">
+                <h4>Subheading</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+                <h4>Subheading</h4>
+                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+                <h4>Subheading</h4>
+                <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            </div>
+        </div>
+        <!-- /row -->
 
 
         <!--        FOOTER -->
