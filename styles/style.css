@@ -52,15 +52,13 @@ header nav li {
 
 .jumbotron {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     margin-right: -4px;
     margin-left: 10px;
     background: url('../images/dictionary1_verysmall.jpg') no-repeat center center;
     background-size: cover;
     max-height: 300px;
 }
-
-
 
 .jumbotron h2 {
     color: #fff;
@@ -77,43 +75,34 @@ header nav li {
     text-shadow: -1px 0 black, 0 1px white, 1px 0 white, 0 1px white;
 }
 
-#menu-row {
 
-    margin: 0 0px;
-
-}
-
-#menu-header {
-    padding-top: 0px;
-}
-
-
-#menu-box {
+.form-box {
     max-width: 500px;
     margin: 0 auto;
-
-    /*top-bottom  right-left*/
     background-color: rgb(240, 240, 240);
+}
 
+
+.form-header {
+    margin: 0 auto;
+    padding: 0px 20px 0px 20px;
+
+}
+
+.form-box h3 {
+    margin-top: 0px;
+    padding-top: 20px;
 }
 
 
 
-#menu-header {
-    padding: 20px 20px 0px 20px;
 
-}
 
 form {
     padding: 0px 20px 0px 20px;
 
 }
 
-#menu-box h3 {
-    margin-top: 0px;
-    padding-top: 10px;
-
-}
 
 
 
