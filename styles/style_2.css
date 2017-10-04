@@ -3,13 +3,13 @@
 
 }
 
-#left-nav{
-/*    margin-right: 80px;*/
+#left-nav {
+    /*    margin-right: 80px;*/
 }
 
-#right-nav{
+#right-nav {
     margin-right: 0px;
-/*    float: right;*/
+    /*    float: right;*/
 }
 
 
@@ -34,6 +34,10 @@
     font-size: calc(25px + .4vw);
     font-weight: 500;
     text-shadow: 2px 2px 8px white;
+}
+
+.panel {
+    background-color: rgb(240, 240, 240);
 }
 
 
