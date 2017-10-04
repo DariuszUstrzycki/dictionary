@@ -1,7 +1,18 @@
 .navbar {
     background: white;
-    padding-right: 100px;
+
 }
+
+#left-nav{
+/*    margin-right: 80px;*/
+}
+
+#right-nav{
+    margin-right: 0px;
+/*    float: right;*/
+}
+
+
 
 .jumbotron {
 
