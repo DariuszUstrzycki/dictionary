@@ -40,6 +40,10 @@
     background-color: rgb(240, 240, 240);
 }
 
+.panel-default > .panel-heading {
+    background-color: rgb(230, 230, 230);
+}
+
 
 
 /*

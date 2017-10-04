@@ -136,15 +136,133 @@
     <div class="container">
         <div class="row row-main">
             <div class="col-sm-6 col-sm-offset-3">
-
-
                 <div class="panel panel-default">
-                    <div class="panel-body">
+
+                    <div class="panel-heading">
                         <h3>Add an item to your dictionary</h3>
                         <p>Enter the data for your new dictionary item. You don't have to complete all the fields. Only the first one is required. When in doubt, click the little question mark next to each input field. It will also show the allowed length of your input. When you are finished, click the submit button. The data will be added to your dictionary.</p>
                     </div>
+
+                    <div class="panel-body">
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label class="control-label">Your new dictionary item:</label>
+                                <input class="form-control" placeholder="e.g. play">
+                            </div>
+
+                            <!-- Checkbox Group !-->
+                            <div id="grammar-checkbox">
+                                <div class="form-group">
+                                    <label class="control-label">The grammar information for this dictionary item:</label>
+
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="gr_info" value="noun">noun (e.g. a book, a dog)</label>
+                                    </div>
+
+
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="gr_info" value="verb">verb (e.g. go, drink)</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="gr_info" value="adjective">adjective (e.g. slow, good)</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="gr_info" value="adverb">adverb (e.g. slowly, well)</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="gr_info" value="preposition">preposition (e.g. in, on)</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="gr_info" value="pronoun">pronoun (e.g. my, he)</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="gr_info" value="conjuction">conjuction (e.g. because, and)</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="gr_info" value="interjection">interjection (e.g. Wow!)</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="gr_info" value="phrasal verb">phrasal verb (e.g. get off))</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="gr_info" value="idiom">idiom</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="gr_info" value="phrase">phrase</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="gr_info" value="proverb">proverb</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Text Box 1 !-->
+                            <div class="form-group">
+                                <label for="mt-translation-id" class="control-label">Your mother tongue translation:</label>
+                                <input type="text" class="form-control" id="mt-translation-id" name="mt-translation" placeholder="e.g spielen">
+                            </div>
+
+                            <!-- Text Box 2 !-->
+                            <div class="form-group">
+                                <label for="second-lg-translation-id" class="control-label">Translation in another foreign language you're learning (French, Spanish, etc.):</label>
+                                <input type="text" class="form-control" id="second-lg-translation-id" name="second-lg-translation" placeholder="e.g. jouer (French)">
+                            </div>
+
+
+                            <!-- 3 Text areas -->
+
+                            <div class="form-group">
+                                <label class="control-label " for="definition-1-id">A definition/-s of your dictionary item:</label>
+                                <textarea class="form-control" id="definition-1-id" name="definition-1" rows="5" placeholder="e.g. engage in (a game or activity) for enjoyment."></textarea>
+                            </div>
+
+                            <div class=" form-group ">
+                                <label class="control-label " for="definition-2-id ">A definition/-s of your dictionary item:</label>
+                                <textarea class="form-control " id="definition-2-id " name="definition-2 " rows="5 " placeholder="e.g. perform on a musical instrument"></textarea>
+                            </div>
+
+                            <div class="form-group ">
+                                <label class="control-label " for="definition-3-id ">A definition/-s of your dictionary item:</label>
+                                <textarea class="form-control " id="definition-3-id " name="definition-3 " rows="5 " placeholder="e.g. perform in a film or theatrical production."></textarea>
+                            </div>
+
+
+                            <!-- 2 Text Boxes !-->
+
+                            <div class="form-group ">
+                                <label for="synonyms-id " class="control-label ">A synonym/-s of your dictionary item:</label>
+                                <input type="text " class="form-control " id="synonyms-id " name="synonyms" placeholder="e.g act, compete">
+                            </div>
+
+                            <div class="form-group ">
+                                <label for="antonyms-id " class="control-label ">An antonym/-s of your dictionary item:</label>
+                                <input type="text " class="form-control " id="antonyms-id " name="antonyms" placeholder="e.g  drudge, labour">
+                            </div>
+
+                            <!-- 2 Text areas -->
+
+                            <div class="form-group">
+                                <label class="control-label " for="definition-1-id">Example sentences:</label>
+                                <textarea class="form-control" id="definition-1-id" name="definition-1" rows="5" placeholder="e.g. The children were playing by a pool. # So, in an eventful year, he played nine tournaments, won six of them and came runner-up in two. # Tom Hanks plays six characters in this new animated movie by Robert Zemeckis."></textarea>
+                            </div>
+
+                            <div class=" form-group ">
+                                <label class="control-label " for="definition-2-id ">Any other information you want to add:</label>
+                                <textarea class="form-control " id="definition-2-id " name="definition-2 " rows="5 " placeholder="e.g. /pleɪ/ I want to try to use this word more often."></textarea>
+                            </div>
+
+                            <!-- Submit button !-->
+
+                            <button type="submit" class="btn btn-primary">Add to my dictionary</button>
+
+                        </form>
+
+
+                    </div>
                 </div>
+                <!-- /panel -->
             </div>
+            <!-- /col-sm-6 -->
         </div>
         <!-- /row -->
 
